@@ -6,7 +6,7 @@ const swaggerSpec = require('./src/utils/swagger');
 const cors = require('cors');
 
 let corsOptions = { 
-    origin : ['http://localhost:3000'], 
+    origin : ['https://food-delivery-api-j7d4.onrender.com'], 
  } 
 
 const PORT = process.env.PORT || 3000;
