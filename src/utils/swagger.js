@@ -6,7 +6,8 @@ const options = {
         openapi: '3.0.0',
         info: {
             title:'Food Delivery API Docs',
-            version: '1.0.0'
+            version: '1.0.0',
+            description:"This is a RESTful API for Food Delivery App backend"
         },
         servers:[
             {
@@ -19,7 +20,7 @@ const options = {
             }
         ]
     },
-    apis:[`../pricing/routes.js`]
+    apis:[`./src/pricing/*.js`]
 }
 
 const swaggerSpec = swaggerJSDoc(options);

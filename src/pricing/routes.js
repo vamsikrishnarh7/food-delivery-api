@@ -5,8 +5,8 @@ const router = Router();
 
 /**
  * @swagger
- * /:
- *  get:
+ * /api/v1/pricing/:
+ *  post:
  *     tags:
  *     summary: Get total price
  *     requestBody:
@@ -22,8 +22,8 @@ const router = Router();
  *                type: string
  *              total_distance:
  *                type: integer
- *              item_id:
- *                type: integer
+ *              item_type:
+ *                type: string
  *            required:
  *              - zone
  *              - organization_id
@@ -39,7 +39,7 @@ const router = Router();
  *      500:
  *        description: Server Error
  */
-router.get('/', (req,res) => {
+router.post('/', (req,res) => {
     controller.getPricing(req,res);
 });
 
