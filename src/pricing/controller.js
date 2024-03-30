@@ -19,7 +19,7 @@ const getPricing = (req,res) => {
         if(error) res.status(500).json({
             error:{
                 status:500,
-                message:"internal server error on line 22"
+                message:"internal server error"
             }            
         });
         console.log(result);
